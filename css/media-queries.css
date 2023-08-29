@@ -1,0 +1,125 @@
+@media only screen and (min-width: 1024px) and (max-width: 1440px) {
+
+    /* ++++++++++++++ GLOBAL ++++++++++++++ */
+
+    h1,
+    h2 {
+        font-size: 5rem;
+    }
+
+    p {
+        font-size: 3rem;
+        line-height: 4rem;
+    }
+
+    /* ++++++++++++++ LOGO HEADER ++++++++++++++ */
+
+    .logo img {
+        width: 15rem;
+    }
+
+    /* ++++++++++++++ FREQUENTLY ASKED ++++++++++++++ */
+
+    .accordion-content header .title,
+    .accordion-content .description {
+        font-size: 3rem;
+    }
+
+    .bottom-navigation {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(5, auto);
+    }
+}
+
+@media only screen and (min-width: 767px) and (max-width: 1023px) {
+
+    /* ++++++++++++++ GLOBAL ++++++++++++++ */
+
+    h1,
+    h2 {
+        font-size: 4rem;
+    }
+
+    p {
+        font-size: 2.5rem;
+        line-height: 3.5rem;
+    }
+
+    /* ++++++++++++++ LOGO HEADER ++++++++++++++ */
+
+    .logo img {
+        width: 10.8rem;
+    }
+
+    /* ++++++++++++++ FREQUENTLY ASKED ++++++++++++++ */
+
+    .accordion-content header .title,
+    .accordion-content .description {
+        font-size: 2.5rem;
+    }
+
+    .bottom-navigation {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(7, auto);
+    }
+}
+
+@media only screen and (min-width: 640px) and (max-width: 766px) {
+
+    /* ++++++++++++++ INFORMATION BLOCKS ++++++++++++++ */
+
+    .downloading__text .text__title,
+    .downloading__text .text__downloading {
+        padding: 0;
+    }
+
+    /* ++++++++++++++ FREQUENTLY ASKED ++++++++++++++ */
+
+    .bottom-navigation {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(10, auto);
+    }
+}
+
+@media only screen and (min-width: 640px) {
+
+    /* ++++++++++++++ GLOBAL ++++++++++++++ */
+
+    h2 {
+        text-align: left;
+    }
+
+    /* ++++++++++++++ TEXT AND EMAIL HEADER ++++++++++++++ */
+
+    .form__container {
+        flex-direction: initial;
+        justify-content: center;
+        column-gap: 1rem;
+    }
+
+    .form__container form input,
+    .asked-email form input {
+        width: 39rem;
+    }
+
+    /* ++++++++++++++ INFORMATION BLOCKS ++++++++++++++ */
+
+    .information-img__container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+    }
+
+    .information-img__container p {
+        text-align: left;
+    }
+
+    .img__left .information-text {
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+    }
+
+    .img__left .img-download {
+        grid-column: 1 / 2;
+    }
+}

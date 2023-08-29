@@ -1,0 +1,444 @@
+@font-face {
+    font-family: 'Netflix Sans';
+    font-style: normal;
+    font-weight: 400;
+    src:
+        local("Netflix Sans"),
+        url("/font/NetflixSans-Regular.woff2") format("woff2"),
+        url("/font/NetflixSans-Regular.otf") format("otf");
+}
+
+@font-face {
+    font-family: 'Netflix Sans';
+    font-style: bold;
+    font-weight: 900;
+    src:
+        local("Netflix Sans"),
+        url("/font/NetflixSans-Bold.woff2") format("woff2"),
+        url("/font/NetflixSans-Bold.otf") format("otf");
+}
+
+:root {
+    --bg-color: rgba(0, 0, 0, 0.8);
+    --button-bg-color: #e50914;
+    --normal-text-color: #fff;
+    --text-color-transparency: rgba(255, 255, 255, 0.7)
+}
+
+/* ++++++++++++++ GLOBAL ++++++++++++++ */
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+    color: var(--normal-text-color);
+}
+
+body {
+    background-color: var(--bg-color);
+    font-family: 'Netflix Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1,
+h2 {
+    font-size: 3.2rem;
+}
+
+h1,
+h2,
+h3 {
+    margin: 0 2rem 1.5rem;
+    text-align: center;
+}
+
+img {
+    display: block;
+    height: auto;
+    width: 100%;
+}
+
+p {
+    font-size: 1.8rem;
+    line-height: 2.5rem;
+    text-align: center;
+    padding: 0 4rem;
+    margin: 0 0 1.5rem 0;
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--button-bg-color);
+    border: none;
+    border-radius: .5rem;
+}
+
+.container {
+    max-width: 102.8rem;
+    margin: 0 auto;
+}
+
+/* ++++++++++++++ HEADER ++++++++++++++ */
+
+.header__container {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.8) 0%, rgba(255, 255, 255, 0.1) 50%,rgba(0, 0, 0, 0.8) 100%), url(../img/1.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 48.5rem;
+    position: relative;
+}
+
+/* ++++++++++++++ LOGO HEADER ++++++++++++++ */
+
+.logo__container {
+    display: grid;
+    grid-template-columns: 3fr minmax(6.4rem, 14.8rem) minmax(auto, 7.691rem);
+    align-items: center;
+    height: 8rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    position: relative;
+    z-index: 1;
+}
+
+.logo {
+    width: 8.8rem;
+}
+
+/* ++++++++++++++ LANGUAGES HEADER ++++++++++++++ */
+
+.languages {
+    margin-right: 1rem;
+}
+
+.languages,
+.subscription {
+    height: 3.2rem;
+}
+
+.languages form {
+    display: flex;
+    justify-content: end;
+    height: 100%;
+}
+
+.languages form select {
+    background-color: transparent;
+    border-radius: .5rem;
+    font-size: 1.2rem;
+    padding: .5rem;
+    width: 80%;
+}
+
+option {
+    color: #000;
+}
+
+.subscription a {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* ++++++++++++++ TEXT AND EMAIL HEADER ++++++++++++++ */
+
+.email__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 8rem;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.form__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form__container form input,
+.asked-email form input {
+    background-color: rgba(22, 22, 22, 0.7);
+    border: 1px solid rgba(128, 128, 128, 0.7);
+    border-radius: .5rem;
+    padding: 1.5rem 1.6rem;
+    height: 4.8rem;
+    width: 29rem;
+}
+
+.form__container form input::placeholder,
+.asked-email form input::placeholder {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.form__container .button,
+.asked-email .button {
+    margin: 3rem 0;
+    max-width: 18rem;
+    height: 4.8rem;
+    padding: .8rem 1.6rem;
+}
+
+.email__container .button a,
+.asked-email .button a {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.email__container .button img,
+.asked-email .button img {
+    width: 2.4rem;
+}
+
+/* ++++++++++++++ INFORMATION BLOCKS ++++++++++++++ */
+
+.information__container {
+    background-color: #000;
+    margin-top: 0.7rem;
+    height: auto;
+}
+
+.information-img__container {
+    max-height: auto;
+    padding: 4rem 2rem;
+}
+
+.information-img__container h2 {
+    padding: 1rem 0;
+}
+
+.information-img__container p {
+    padding: 0 2rem;
+}
+
+.img-tv {
+    position: relative;
+    max-width: 60rem;
+    margin: auto;
+}
+
+.img-tv img {
+    width: 100%;
+    z-index: 10;
+    max-width: 60rem;
+    position: relative;
+}
+
+.video-tv {
+    position: absolute;
+    top: 48.2%;
+    left: 49.9%;
+    transform: translate(-50%, -50%);
+    width: 89%;
+    height: 54%;
+}
+
+.video-pc {
+    position: absolute;
+    top: 35%;
+    left: 46%;
+    transform: translate(-46%, -50%);
+    width: 64%;
+    height: 60%;
+}
+
+.img-download {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;   
+}
+
+.img-download .downloading {
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    align-items: center;
+    border: .2rem solid rgba(255, 255, 255, 0.5);
+    border-radius: 1rem;
+    width: 75%;
+    height: auto;
+}
+
+.downloading {
+    padding: 1rem;
+}
+
+.downloading .downloading__img img {
+    width: 70%;
+}
+
+.downloading__text .text__title {
+    font-size: 1.4rem;
+}
+
+.downloading__text .text__downloading {
+    color: #0071eb;
+    font-size: 1.2rem;
+}
+
+.downloading__text .text__title,
+.downloading__text .text__downloading {
+    text-align: left;
+    margin: 0;
+}
+
+.img-download {
+    position: relative;
+}
+
+.img-download .downloading {
+    background-color: #000;
+    position: absolute;
+    top: 83%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* ++++++++++++++ FREQUENTLY ASKED ++++++++++++++ */
+
+.asked__container {
+    background-color: #000;
+    margin-top: 0.7rem;
+    padding-bottom: 4rem;
+}
+
+.accordion {
+    max-width: 98rem;
+    width: 100%;
+}
+
+.accordion h2 {
+    text-align: center;
+    padding: 6rem 0;
+}
+
+.accordion .accordion-content {
+    background-color: #2d2d2d;
+    margin: 0 2.5rem 1rem;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.accordion-content.open{
+    padding-bottom: 2rem;
+}
+
+.accordion-content header {
+    border-bottom: .1rem solid #000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: background-color ease-in-out 0.3s;
+}
+
+.accordion-content header:hover {
+    background-color: #454545;
+    cursor: pointer;
+}
+
+.accordion-content header .title {
+    padding: 2.4rem;
+}
+
+.accordion-content header i,
+.accordion .description {
+    padding: 0 2.4rem;
+}
+
+.accordion-content header .title {
+    font-size: 1.8rem;
+}
+
+.accordion-content header i {
+    font-size: 1.8rem;
+}
+
+.accordion-content .description {
+    height: 0;
+    transition: all 0.2s linear;
+    font-size: 1.6rem;
+    text-align: left;
+    margin: 0;
+}
+
+.asked-email__text {
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+    text-align: center;
+}
+
+/* ++++++++++++++ FREQUENTLY ASKED ++++++++++++++ */
+
+.footer {
+    background-color: #000;
+    margin-top: 0.7rem;
+}
+
+.navigation__container {
+    padding: 4rem 4rem 2rem;
+}
+
+.navigation__container .questions {
+    display: grid;
+}
+
+.navigation__container .questions a {
+    font-size: 1.6rem;
+    width: auto;
+}
+
+.footer .bottom-navigation {
+    display: grid;
+    column-gap: 2rem;
+}
+
+.navigation__container .bottom-navigation a {
+    font-size: 1.4rem;
+}
+
+.navigation__container .questions a,
+.navigation__container .bottom-navigation a {
+    margin: 1rem 0;
+    text-decoration: underline;
+    color: rgba(255,255,255,0.7);
+}
+
+.footer .languages {
+        display: flex;
+        justify-content: start;
+        padding-left: 4rem;
+}
+
+.footer .languages form select {
+    width: 100%;
+    font-size: 1.5rem;
+    font-weight: bold;
+    background-color: rgba(45, 45, 45, 0.2);
+}
+
+.footer p {
+    text-align: left;
+    margin: 0;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    font-size: 1.4rem;
+    color: rgba(255,255,255,0.7);
+}
