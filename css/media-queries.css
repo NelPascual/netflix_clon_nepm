@@ -18,6 +18,16 @@
         width: 15rem;
     }
 
+    /* ++++++++++++++ INFORMATION BLOCKS ++++++++++++++ */
+
+    .downloading__text .text__title {
+        font-size: 1.8rem;
+    }
+    
+    .downloading__text .text__downloading {
+        font-size: 1.6rem;
+    }
+
     /* ++++++++++++++ FREQUENTLY ASKED ++++++++++++++ */
 
     .accordion-content header .title,
@@ -51,6 +61,16 @@
         width: 10.8rem;
     }
 
+    /* ++++++++++++++ INFORMATION BLOCKS ++++++++++++++ */
+
+    .downloading__text .text__title {
+        font-size: 1.7rem;
+    }
+    
+    .downloading__text .text__downloading {
+        font-size: 1.5rem;
+    }
+
     /* ++++++++++++++ FREQUENTLY ASKED ++++++++++++++ */
 
     .accordion-content header .title,
@@ -70,7 +90,7 @@
 
     .downloading__text .text__title,
     .downloading__text .text__downloading {
-        padding: 0;
+        padding: 0 0 0 1.5rem;
     }
 
     /* ++++++++++++++ FREQUENTLY ASKED ++++++++++++++ */

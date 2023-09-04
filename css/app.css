@@ -274,14 +274,11 @@ option {
     border-radius: 1rem;
     width: 75%;
     height: auto;
-}
-
-.downloading {
-    padding: 1rem;
+    padding: .5rem 1rem;
 }
 
 .downloading .downloading__img img {
-    width: 70%;
+    width: 80%;
 }
 
 .downloading__text .text__title {
@@ -295,8 +292,8 @@ option {
 
 .downloading__text .text__title,
 .downloading__text .text__downloading {
-    text-align: left;
     margin: 0;
+    text-align: left;
 }
 
 .img-download {
